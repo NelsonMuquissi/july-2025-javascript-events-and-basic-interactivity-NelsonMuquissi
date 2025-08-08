@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages - Week 6 Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Interactive Web Page 🚀</h1>
+
+  <!-- PART 1: EVENT HANDLING -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="toggleMessageBtn">Show Message</button>
+    <p id="message" class="hidden">🎉 Hello! You triggered this with a click event.</p>
+  </section>
+
+  <!-- PART 2: INTERACTIVE ELEMENTS -->
+  <section>
+    <h2>Part 2: Interactive Elements</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggle">Switch to Dark Mode</button>
+
+    <!-- Counter -->
+    <div>
+      <p>Counter: <span id="counterValue">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="decreaseBtn">Decrease</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer hidden">JavaScript is a programming language for the web, used to add interactivity.</p>
+    </div>
+  </section>
+
+  <!-- PART 3: FORM VALIDATION -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="signupForm">
+      <label>Name:</label>
+      <input type="text" id="name">
+      <p class="error" id="nameError"></p>
+
+      <label>Email:</label>
+      <input type="text" id="email">
+      <p class="error" id="emailError"></p>
+
+      <label>Password:</label>
+      <input type="password" id="password">
+      <p class="error" id="passwordError"></p>
+
+      <button type="submit">Sign Up</button>
+      <p id="successMessage" class="success hidden">✅ Form submitted successfully!</p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
